@@ -2,7 +2,6 @@ import requests
 from flask import Flask, render_template, request, redirect, flash
 
 app = Flask(__name__)
-app.run(debug=True)
 
 app.secret_key = "my_super_secret_key_060606062222!@#"
 
