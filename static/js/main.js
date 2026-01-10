@@ -10,24 +10,19 @@ window.addEventListener("scroll", () => {
 });
 
 
+const form = document.getElementById("contactForm");
 
-
-  const form = document.getElementById("contactForm");
-
-  form.addEventListener("submit", function(e) {
+form.addEventListener("submit", function (e) {
   const formData = {
-  name: form.name.value,
-  email: form.email.value,
-  message: form.message.value
-};
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value
+  };
   sessionStorage.setItem("pendingFormData", JSON.stringify(formData));
 });
 
 
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var typed = new Typed("#typed-text", {
     strings: ["Welcome to my Portfolio"],
     typeSpeed: 100,   // speed of typing in milliseconds
@@ -38,6 +33,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+  // Optional: Ensure collapse uses max-height animation
+  document.addEventListener('DOMContentLoaded', () => {
+  const collapseEl = document.getElementById('appBarMenu');
+  const bsCollapse = new bootstrap.Collapse(collapseEl, {toggle: false});
 
-
-
+  const toggler = document.querySelector('.navbar-toggler');
+  toggler.addEventListener('click', () => {
+  collapseEl.classList.toggle('show');
+});
+});
