@@ -158,6 +158,7 @@ main {
 }
 /* Card container */
 .project-card {
+
    animation: floatCard 4s ease-in-out infinite;
   background: rgba(255, 255, 255, 0.35);
   border-radius: 15px;
@@ -273,19 +274,6 @@ main {
     padding: 40px 15px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -561,8 +549,4 @@ button {
     max-width: 1200px;
   }
 }
-
-
-
-
 
