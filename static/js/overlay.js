@@ -18,7 +18,13 @@ const projectImages = {
     '/static/images/projects/15.jpg',
   ],
   'shopping-cart': [
-    '/static/images/comingsoon.jpg',
+    '/static/images/shopping_cart/1.png',
+    '/static/images/shopping_cart/2.png',
+    '/static/images/shopping_cart/3.png',
+    '/static/images/shopping_cart/4.png',
+    '/static/images/shopping_cart/5.png',
+    '/static/images/shopping_cart/6.png',
+    '/static/images/shopping_cart/7.png',
 
     // Add more images for this project
   ],
