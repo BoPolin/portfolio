@@ -83,7 +83,23 @@ const projectImages = {
     'product-api': [
     '/static/images/product_api_java/1.png',
     // Add more images for this project
-  ]
+  ],
+
+  'tire_pos': [
+    '/static/images/tire_pos/1.png',
+    '/static/images/tire_pos/2.png',
+    '/static/images/tire_pos/3.png',
+    '/static/images/tire_pos/4.png',
+    '/static/images/tire_pos/5.png',
+    '/static/images/tire_pos/6.png',
+    '/static/images/tire_pos/7.png',
+    '/static/images/tire_pos/8.png',
+    '/static/images/tire_pos/9.png',
+    '/static/images/tire_pos/10.png',
+    '/static/images/tire_pos/11.png',
+    // Add more images for this project
+  ],
+
 
 };
 
