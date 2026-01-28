@@ -54,9 +54,37 @@ const projectImages = {
     // Add more images for this project
   ],
   'mobile-ui': [
+    '/static/images/mobile_app/1.png',
+    '/static/images/mobile_app/2.png',
+    '/static/images/mobile_app/3.png',
+    '/static/images/mobile_app/4.png',
+    '/static/images/mobile_app/5.png',
+    '/static/images/mobile_app/6.png',
+    '/static/images/mobile_app/7.png',
+    '/static/images/mobile_app/8.png',
+    '/static/images/mobile_app/9.png',
+    '/static/images/mobile_app/10.png',
+    '/static/images/mobile_app/11.png',
+    '/static/images/mobile_app/12.png',
+    '/static/images/mobile_app/13.png',
+    '/static/images/mobile_app/14.png',
+    '/static/images/mobile_app/15.png',
+
+  ],
+
+  'minimart-api': [
     '/static/images/comingsoon.jpg',
     // Add more images for this project
+  ],
+  'coffee_reservation': [
+    '/static/images/comingsoon.jpg',
+    // Add more images for this project
+  ],
+    'product-api': [
+    '/static/images/product_api_java/1.png',
+    // Add more images for this project
   ]
+
 };
 
 // Project titles
