@@ -1,40 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="page-section d-flex justify-content-center align-items-center" style="height: 100vh;">
-  <div class="glass-card gradient-text text-center" style="width: 1300px; height:500px; display: flex; justify-content: center; align-items: center;">
-    <h1 class="typing-text">
-      <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
-      <span> </span>
-      <span>t</span><span>o</span>
-      <span> </span>
-      <span>m</span><span>y</span>
-      <span> </span>
-      <span>P</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+<!-- Hero Section -->
+<section class="hero-section d-flex justify-content-center align-items-center">
+  <div class="hero-content text-center">
+    <h1 class="hero-title gradient-text">
+      Welcome to My Portfolio
     </h1>
+    <p class="hero-subtitle">
+      Web Developer | Problem Solver | Creative Thinker
+    </p>
   </div>
 </section>
 
+<!-- Main Content Sections -->
+<main>
+  <section class="page-section" id="home">
+    {% include "index.html" %}
+  </section>
 
+  <section class="page-section" id="education">
+    {% include "education.html" %}
+  </section>
 
-<section class="page-section">
-  {% include "index.html" %}
-</section>
+  <section class="page-section" id="projects">
+    {% include "projects.html" %}
+  </section>
 
-<section class="page-section">
-  {% include "education.html" %}
-</section>
+  <section class="page-section" id="contact">
+    {% include "contact.html" %}
+  </section>
 
-<section class="page-section">
-  {% include "projects.html" %}
-</section>
-
-<section class="page-section">
-  {% include "contact.html" %}
-</section>
-
-<section class="page-section">
-  {% include "CV.html" %}
-</section>
+  <section class="page-section" id="cv">
+    {% include "CV.html" %}
+  </section>
+</main>
 
 {% endblock %}
