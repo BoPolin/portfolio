@@ -1,14 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 
+<section class="container pb-5">
+  <div class="text-center" style="margin-top: 100px; margin-bottom: 50px;">
+    <h2 class="text-center gradient-text floating-text" style="font-size: 50px; padding-bottom: 3px;">
+      Curriculum Vitae
+    </h2>
+  </div>
 
-   <!-- Full CV Image Section -->
-<section class="container py-5 text-center">
-  <img src="{{ url_for('static', filename='images/CV.png') }}"
-       alt="Curriculum Vitae"
-       class="img-fluid rounded shadow"
-       style="max-width:100%; height: auto;">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 text-center">
+      <img src="{{ url_for('static', filename='images/CV.png') }}"
+           alt="Curriculum Vitae"
+           class="img-fluid rounded shadow bordered-image"
+           style="max-width:100%; height: auto; border: 1px solid rgba(148, 163, 184, 0.18);">
+    </div>
+  </div>
 </section>
-
 
 {% endblock %}

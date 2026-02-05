@@ -1,78 +1,44 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="contact-page pb-5"> <div class="container">
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  {% with messages = get_flashed_messages(with_categories=true) %}
-    {% if messages %}
-      {% for category, message in messages %}
-        Swal.fire({
-          position: "center",
-          icon: "{{ 'success' if category == 'success' else 'error' }}",
-          title: "{{ message }}",
-          showConfirmButton: false,
-          timer: 2000,
-          timerProgressBar: true,
-          customClass: {
-            popup: 'swal-glass'
-          },
-          backdrop: `
-            rgba(0,0,0,0.3)
-            left top
-            no-repeat
-          `
-        });
-      {% endfor %}
-    {% endif %}
-  {% endwith %}
-});
-</script>
+    <div class="text-center" style="margin-top: 100px; margin-bottom: 50px;">
+      <h2 class="text-center gradient-text floating-text" style="font-size: 50px; padding-bottom: 3px; display: block; width: 100%;">
+        Contact Me
+      </h2>
+    </div>
 
+    <div class="glass-card p-5">
+      <form method="POST" class="glass-form" action="/contact">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <div class="text-center">
+          <button type="submit" style="width: 300px;">Send Message</button>
+        </div>
+      </form>
 
-
-
-<div class="contact-page">
-  <div class="glass-card p-5">
-      <div class="text-center">
-    <h3 class="mb-4 text-center gradient-text">Contact Me</h3>
+      <div class="contact-links mt-4 mx-auto" style="max-width: 350px;">
+        <div class="d-flex flex-column align-items-center text-white">
+          <p class="d-flex align-items-center text-start mb-2">
+            <i class="fab fa-telegram me-2"></i>
+            Telegram:<span class="ms-1 gradient-text"><a style="text-decoration: none" href="https://t.me/bopolin" target="_blank">+855 874 385 54</a></span>
+          </p>
+          <p class="d-flex align-items-center text-start mb-2">
+            <i class="fas fa-envelope me-2"></i>
+            Email:<span class="ms-1 gradient-text"><a style="text-decoration: none" href="https://mail.google.com/mail/?view=cm&fs=1&to=bopolin3@gmail.com&su=Hello&body=Message" target="_blank">bopolin3@gmail.com</a></span>
+          </p>
+          <p class="d-flex align-items-center text-start mb-2">
+            <i class="fab fa-github me-2"></i>
+            GitHub:<span class="ms-1 gradient-text"><a style="text-decoration: none" href="https://github.com/BoPolin" target="_blank">github.com/BoPolin</a></span>
+          </p>
+          <p class="d-flex align-items-center text-start mb-2">
+            <i class="fab fa-linkedin me-2"></i>
+            LinkedIn:<span class="ms-1 gradient-text"><a class="text-decoration-none" href="https://www.linkedin.com/in/bo-polin-86783a2a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Bo Polin</a></span>
+          </p>
+        </div>
       </div>
-<form method="POST" class="glass-form" action="/contact">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <div class="text-center">
-    <button type="submit" style="width: 300px;">Send Message</button>
-  </div>
-</form>
-
-
-<div class="contact-links mt-4 mx-auto" style="max-width: 350px;">
-  <div class="d-flex flex-column flex-md-column align-items-center  text-white">
-
-  <p class="d-flex align-items-center text-start mb-2">
-    <i class="fab fa-telegram me-2"></i>
-      Telegram:<span class="ms-1 gradient-text"><a style="text-decoration: none" href="https://t.me/bopolin" target="_blank">+855 874 385 54</a></span>
-  </p>
-  <p class="d-flex align-items-center text-start mb-2">
-    <i class="fas fa-envelope me-2"></i>
-      Email:<span class="ms-1 gradient-text"><a style="text-decoration: none" href="https://mail.google.com/mail/?view=cm&fs=1&to=bopolin3@gmail.com&su=Hello&body=Message
-" target="_blank">bopolin3@gmail.com</a></span>
-  </p>
-  <p class="d-flex align-items-center text-start mb-2">
-    <i class="fab fa-github me-2"></i>
-    GitHub:<span class="ms-1 gradient-text"><a style="text-decoration: none" href="https://github.com/BoPolin" target="_blank">github.com/BoPolin</a></span>
-  </p>
-<p class="d-flex align-items-center text-start mb-2">
-  <i class="fab fa-linkedin me-2"></i>
-  LinkedIn:<span class="ms-1 gradient-text"><a class="text-decoration-none" href="https://www.linkedin.com/in/bo-polin-86783a2a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Bo Polin</a></span>
-</p>
-
-
-</div>
-
-  </div>
-</div>
- </div>
+    </div> </div> </div>
 
 {% endblock %}

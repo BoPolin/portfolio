@@ -1,20 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="project-page py-5">
+
+<section class="project-page pb-5">
   <div class="container">
-    <h2 class="text-center mb-5 gradient-text floating-text" style="font-size: 50px; padding-bottom: 3px;">
-      My Projects
-    </h2>
+
+    <div class="text-center" style="margin-top: 100px; margin-bottom: 50px;">
+      <h2 class="text-center gradient-text floating-text" style="font-size: 50px; padding-bottom: 3px;">
+        My Projects
+      </h2>
+    </div>
 
     <div class="projects-grid">
-      <!-- Card 1 -->
-
-
-          <div class="projects-grid">
-      <!-- Card 1 -->
       <div class="project-card glass-card">
-        <h3 class="gradient-text text-center">WEB Prdouct API</h3>
-        <p class="border-text d-inline-block text-center" style="color: honeydew">Java spring boot</p>
+        <h3 class="gradient-text text-center">WEB Product API</h3>
+        <p class="border-text d-inline-block text-center" style="color: honeydew">Java Spring Boot</p>
         <div class="mt-3">
           <a href="https://webapi.polin.website/swagger-ui/index.html" target="_blank">Live Demo</a>
           <a href="https://github.com/BoPolin/web-api-product" target="_blank">Source Code</a>
@@ -23,8 +22,8 @@
       </div>
 
       <div class="project-card glass-card">
-        <h3 class="gradient-text text-center">Mini Mart Rest API </h3>
-        <p class="border-text d-inline-block text-center" style="color: honeydew">Java spring boot</p>
+        <h3 class="gradient-text text-center">Mini Mart Rest API</h3>
+        <p class="border-text d-inline-block text-center" style="color: honeydew">Python Flask</p>
         <div class="mt-3">
           <a href="https://minimart-api.polin.website" target="_blank">Live Demo</a>
           <a href="https://github.com/BoPolin/Mini_Mart_Rest_API" target="_blank">Source Code</a>
@@ -32,18 +31,16 @@
         </div>
       </div>
 
-        <div class="project-card glass-card">
+      <div class="project-card glass-card">
         <h3 class="gradient-text text-center">Coffee shop Telegram Bot</h3>
-        <p class="border-text d-inline-block text-center" style="color: honeydew">Java spring boot</p>
+        <p class="border-text d-inline-block text-center" style="color: honeydew">Java Spring Boot</p>
         <div class="mt-3">
           <a href="https://github.com/BoPolin/telegram-bot" target="_blank">Source Code</a>
           <a href="#" class="view-design-btn" data-project="shopping-cart">View Design</a>
         </div>
       </div>
 
-
-
-        <div class="project-card glass-card">
+      <div class="project-card glass-card">
         <h3 class="gradient-text text-center">Product With API</h3>
         <p class="border-text d-inline-block text-center" style="color: honeydew">Python Angular</p>
         <div class="mt-3">
@@ -51,7 +48,8 @@
           <a href="#" class="view-design-btn" data-project="shopping-cart">View Design</a>
         </div>
       </div>
-        <div class="project-card glass-card">
+
+      <div class="project-card glass-card">
         <h3 class="gradient-text text-center">Student List</h3>
         <p class="border-text d-inline-block text-center" style="color: honeydew">Python Angular</p>
         <div class="mt-3">
@@ -59,6 +57,7 @@
           <a href="#" class="view-design-btn" data-project="shopping-cart">View Design</a>
         </div>
       </div>
+
       <div class="project-card glass-card">
         <h3 class="gradient-text text-center">Skin Care App API</h3>
         <p class="border-text d-inline-block text-center" style="color: honeydew">Dart Flutter</p>
@@ -67,23 +66,15 @@
           <a href="#" class="view-design-btn" data-project="shopping-cart">View Design</a>
         </div>
       </div>
-
-    </div>
     </div>
   </div>
 </section>
 
-<!-- Popup Overlay (ONE for all projects) -->
 <div class="popup-overlay" id="designPopup">
   <div class="popup-content">
-    <!-- Close Button using Tailwind -->
-    <button id="closePopup" class="close-btn-tailwind">
-      ×
-    </button>
+    <button id="closePopup" class="close-btn-tailwind">×</button>
     <h3 id="popupTitle">Project Designs</h3>
-    <div class="slideshow-container">
-      <!-- Images will be dynamically inserted here -->
-    </div>
+    <div class="slideshow-container"></div>
     <div class="slide-controls">
       <button id="prevSlide">&lt;</button>
       <span class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">5</span></span>

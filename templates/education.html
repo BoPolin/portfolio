@@ -1,55 +1,52 @@
 {% extends "base.html" %}
 {% block content %}
 
-<section class="education-page py-5 ">
+<section class="education-page pb-5">
   <div class="container">
-    <h2 class="text-center mb-4 gradient-text floating-text" style="font-size: 50px;padding-bottom: 3px;" >My Education Journey</h2>
 
-
-     <!-- University -->
-    <div class="row align-items-center mb-5 glass-card" style="padding: 20px">
-<div class="col-md-8 text-white">
-  <h5>SETEC Institute</h5>
-
-  <p class="small mb-2">
-    <i class="bi bi-calendar3"></i> 2022 - Present
-  </p>
-
-  <p>
-    University life has been exciting and challenging.<br>
-    I have engaged in projects, internships, and networking with like-minded peers.<br>
-    Each day provides opportunities to learn, grow academically, and develop practical skills for my future career.
-  </p>
-</div>
-
-      <div class="col-md-4">
-          <a href="https://maps.app.goo.gl/CpCtSJ56tqnXzZx39" target="_blank">
-            <img src="{{ url_for('static', filename='images/school/university.jpg') }}"
-             class="img-fluid rounded shadow animate__animated animate__fadeIn bordered-image"
-             alt="University">
-          </a>
-
-      </div>
+    <div class="text-center" style="margin-top: 100px; margin-bottom: 50px;">
+      <h2 class="text-center gradient-text floating-text" style="font-size: 50px; padding-bottom: 3px;">
+        My Education Journey
+      </h2>
     </div>
 
-    <!-- English School -->
     <div class="row align-items-center mb-5 glass-card" style="padding: 20px">
       <div class="col-md-8 text-white">
-        <h5>SOTHEAST ASIA LANGUAGE SCHOOL</h5>
-        <p class="small mb-2"><i class="bi bi-calendar3"></i> 2022 - 2023</p>
+        <h5 class="gradient-text">SETEC Institute</h5>
+        <p class="small mb-2">
+          <i class="bi bi-calendar3"></i> 2022 - Present
+        </p>
         <p>
-          At SOTHEAST ASIA LANGUAGE SCHOOL.
+          University life has been exciting and challenging.<br>
+          I have engaged in projects, internships, and networking with like-minded peers.<br>
+          Each day provides opportunities to learn, grow academically, and develop practical skills for my future career.
         </p>
       </div>
       <div class="col-md-4">
-           <a href="https://www.google.com/maps/dir//ASEAN+School+of+Cambodia,+827+Mittapheap+Village,+city+120702/@11.5618374,104.8425754,12.75z/data=!4m17!1m8!3m7!1s0x3109539579f00211:0x30b97a3118c0e67a!2sASEAN+School+of+Cambodia!8m2!3d11.5612699!4d104.8737633!15sCh5TT1VUSEVBU1QgQVNJQSBMQU5HVUFHRSBTQ0hPT0xaICIec291dGhlYXN0IGFzaWEgbGFuZ3VhZ2Ugc2Nob29skgEYZ2VuZXJhbF9lZHVjYXRpb25fc2Nob29s4AEA!16s%2Fg%2F11b6srrsmr!4m7!1m0!1m5!1m1!1s0x3109539579f00211:0x30b97a3118c0e67a!2m2!1d104.8737633!2d11.5612699!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-        <img src="{{ url_for('static', filename='images/school/img.jpg') }}"
-             class="img-fluid rounded shadow animate__animated animate__fadeIn bordered-image"
-             alt="University">
-           </a>
+        <a href="https://maps.app.goo.gl/CpCtSJ56tqnXzZx39" target="_blank">
+          <img src="{{ url_for('static', filename='images/school/university.jpg') }}"
+               class="img-fluid rounded shadow animate__animated animate__fadeIn bordered-image"
+               alt="University">
+        </a>
       </div>
     </div>
 
+    <div class="row align-items-center mb-5 glass-card" style="padding: 20px">
+      <div class="col-md-8 text-white">
+        <h5 class="gradient-text">SOUTHEAST ASIA LANGUAGE SCHOOL</h5>
+        <p class="small mb-2"><i class="bi bi-calendar3"></i> 2022 - 2023</p>
+        <p>
+          Focused on intensive language studies to enhance professional communication skills.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <a href="https://www.google.com/maps/dir//ASEAN+School+of+Cambodia,+827+Mittapheap+Village,+city+120702/@11.5618374,104.8425754,12.75z/data=!4m17!1m8!3m7!1s0x3109539579f00211:0x30b97a3118c0e67a!2sASEAN+School+of+Cambodia!8m2!3d11.5612699!4d104.8737633!15sCh5TT1VUSEVBU1QgQVNJQSBMQU5HVUFHRSBTQ0hPT0xaICIec291dGhlYXN0IGFzaWEgbGFuZ3VhZ2Ugc2Nob29skgEYZ2VuZXJhbF9lZHVjYXRpb25fc2Nob29s4AEA!16s%2Fg%2F11b6srrsmr!4m7!1m0!1m5!1m1!1s0x3109539579f00211:0x30b97a3118c0e67a!2m2!1d104.8737633!2d11.5612699!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          <img src="{{ url_for('static', filename='images/school/img.jpg') }}"
+               class="img-fluid rounded shadow animate__animated animate__fadeIn bordered-image"
+               alt="English School">
+        </a>
+      </div>
+    </div>
 
   </div>
 </section>
